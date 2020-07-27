@@ -401,13 +401,8 @@ class _HomePageState extends State<HomePage> {
               Container(
                 padding: EdgeInsets.only(top: 10),
                 decoration: BoxDecoration(
-                  border: Border(
-                    top: BorderSide(
-                      color: Constants.color,
-                      width: 3
-                    )
-                  )
-                ),
+                    border: Border(
+                        top: BorderSide(color: Constants.color, width: 3))),
                 child: Column(
                   children: <Widget>[
                     Image.asset(
@@ -419,7 +414,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     Text(
                       'Home',
-                      style: TextStyle(fontSize:12,color: Constants.color),
+                      style: TextStyle(fontSize: 12, color: Constants.color),
                     )
                   ],
                 ),
@@ -428,12 +423,7 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.only(top: 10),
                 decoration: BoxDecoration(
                     border: Border(
-                        top: BorderSide(
-                            color: Colors.transparent,
-                          width: 3
-                        )
-                    )
-                ),
+                        top: BorderSide(color: Colors.transparent, width: 3))),
                 child: Column(
                   children: <Widget>[
                     Image.asset(
@@ -445,7 +435,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                     Text(
                       'Reminder',
-                      style: TextStyle(fontSize: 12,color: Constants.textColor),
+                      style:
+                          TextStyle(fontSize: 12, color: Constants.textColor),
                     )
                   ],
                 ),
@@ -454,12 +445,7 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.only(top: 10),
                 decoration: BoxDecoration(
                     border: Border(
-                        top: BorderSide(
-                            color: Colors.transparent,
-                          width: 3
-                        )
-                    )
-                ),
+                        top: BorderSide(color: Colors.transparent, width: 3))),
                 child: Column(
                   children: <Widget>[
                     Image.asset(
@@ -471,7 +457,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                     Text(
                       'Prescription',
-                      style: TextStyle(color: Constants.textColor, fontSize: 12),
+                      style:
+                          TextStyle(color: Constants.textColor, fontSize: 12),
                     )
                   ],
                 ),
@@ -480,12 +467,7 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.only(top: 10),
                 decoration: BoxDecoration(
                     border: Border(
-                        top: BorderSide(
-                            color: Colors.transparent,
-                          width: 3
-                        )
-                    )
-                ),
+                        top: BorderSide(color: Colors.transparent, width: 3))),
                 child: Column(
                   children: <Widget>[
                     Image.asset(
@@ -497,7 +479,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                     Text(
                       'Account',
-                      style: TextStyle(color: Constants.textColor, fontSize: 12),
+                      style:
+                          TextStyle(color: Constants.textColor, fontSize: 12),
                     )
                   ],
                 ),
