@@ -52,61 +52,9 @@ class _HomePageState extends State<HomePage> {
 
           ]),
       body: SingleChildScrollView(
-        physics: BouncingScrollPhysics(),
         child: Column(
           children: <Widget>[
-            Container(
-              height: 165.77,
-              decoration: BoxDecoration(
-                color: Color(0xFF1686C5)
-              ),
-              child: Stack(
-
-                children: <Widget>[
-                  Positioned(
-                    left: 200.3,
-                    child: Container(
-                      width: 160,
-                      height: 160,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(150),
-                          gradient: LinearGradient(
-                            begin: Alignment.centerLeft,
-                              end: Alignment.centerRight,
-                              colors: [
-                                Colors.white.withOpacity(0.1),
-                                Colors.transparent
-                              ]
-                          )
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    left: 250.3,
-                    bottom: 20,
-                    child: Container(
-                      width: 230,
-                      height: 230,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(150),
-                        color: Colors.white.withOpacity(0.2)
-                      ),
-                    ),
-                  ),
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: IconButton(
-                      icon: Icon(Icons.arrow_back_ios,color: Colors.white,),
-                    ),
-                  ),
-                  Align(
-                    alignment: Alignment.center,
-                    child: Text('My Cart',style: TextStyle(fontSize: 20, color: Colors.white),),
-                  ),
-
-                ],
-              ),
-            ),
+            _headerBuild(),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 12.0,horizontal: 50),
               child: Row(
@@ -152,6 +100,7 @@ class _HomePageState extends State<HomePage> {
                           height: 134,
                           child: ListView(
                               scrollDirection: Axis.horizontal,
+                              physics: BouncingScrollPhysics(),
                               children: <Widget>[
                                 Container(
                                   height: 134,
@@ -335,6 +284,61 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
     );
+  }
+
+  Container _headerBuild() {
+    return Container(
+            height: 165.77,
+            decoration: BoxDecoration(
+              color: Color(0xFF1686C5)
+            ),
+            child: Stack(
+
+              children: <Widget>[
+                Positioned(
+                  left: 200.3,
+                  child: Container(
+                    width: 160,
+                    height: 160,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(150),
+                        gradient: LinearGradient(
+                          begin: Alignment.centerLeft,
+                            end: Alignment.centerRight,
+                            colors: [
+                              Colors.white.withOpacity(0.1),
+                              Colors.transparent
+                            ]
+                        )
+                    ),
+                  ),
+                ),
+                Positioned(
+                  left: 250.3,
+                  bottom: 20,
+                  child: Container(
+                    width: 230,
+                    height: 230,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(150),
+                      color: Colors.white.withOpacity(0.2)
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: IconButton(
+                    icon: Icon(Icons.arrow_back_ios,color: Colors.white,),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.center,
+                  child: Text('My Cart',style: TextStyle(fontSize: 20, color: Colors.white),),
+                ),
+
+              ],
+            ),
+          );
   }
 }
 
